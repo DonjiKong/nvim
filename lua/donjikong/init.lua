@@ -1,6 +1,6 @@
 require('donjikong.remap')
 require('donjikong.set')
-
+require('donjikong.python')
 print("hello from donjikong")
 
 

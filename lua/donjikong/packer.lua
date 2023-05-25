@@ -46,15 +46,20 @@ use {
     -- Snippets
     {'L3MON4D3/LuaSnip'},             -- Required
     {'rafamadriz/friendly-snippets'}, -- Optional
-  }
-}
+
+}}
 use('itchyny/lightline.vim')
 
 use('nvim-tree/nvim-web-devicons')
 use('chrisgrieser/nvim-spider')
 
+use('MunifTanjim/nui.nvim')
 use('eandrju/cellular-automaton.nvim')
+
+
 end)
+
+
 
 
 

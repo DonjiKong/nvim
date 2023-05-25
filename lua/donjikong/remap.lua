@@ -17,6 +17,10 @@ function _G.explore_project_root()
     end
 end
 
+-- Make <C-c> work the same as esc in Insert Mode
+-- vim.api.nvim_set_keymap('i', '<C-c>', '<Esc>', { noremap = true })
+
+
 
 
 -- leader y yank to clipboard
@@ -118,5 +122,9 @@ vim.keymap.set({"n", "o", "x"}, "ge", function() require("spider").motion("ge") 
 vim.keymap.set("n", "<leader>pp", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>pa", "<cmd>CellularAutomaton game_of_life<CR>")
 
+-- force close the current buffer
+vim.api.nvim_set_keymap('n', '<C-W>', ':bd!<CR>', {noremap = true, silent = true})
 
+-- switch buffers
+vim.api.nvim_set_keymap('n', '<leader><leader>', ':bnext<CR>', {noremap = true, silent = true})
 
