@@ -6,3 +6,6 @@ require("donjikong")
 vim.o.winbar = "%{%v:lua.require('donjikong.win').eval()%}"
 
 
+vim.cmd.packadd('nvim-treeclimber') 
+require('nvim-treeclimber').setup()
+

@@ -55,8 +55,8 @@ use('chrisgrieser/nvim-spider')
 
 use('MunifTanjim/nui.nvim')
 use('eandrju/cellular-automaton.nvim')
-
-
+use('Dkendal/nvim-treeclimber')
+use('rktjmp/lush.nvim')
 end)
 
 
